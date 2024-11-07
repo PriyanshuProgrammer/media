@@ -1,0 +1,442 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+main>section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav{
+    width: 3vw;
+    height: 25vh;
+    background-color: #492f2f8c;
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    color: white;
+    padding:20px 0px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav i{
+    margin-inline:auto;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+}
+
+.nav i:hover{
+    margin-inline:auto;
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 50px;
+}
+
+.mainbox{
+    width: 60vw;
+    height: 85vh;
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(143, 140, 140, 0.295);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.mainbox>.box1{
+    width: 65%;
+    height: 85vh;
+    border-right: 1px solid rgba(255, 255, 255, 0.247);
+    padding: 30px;
+    padding-bottom: 0px;
+    overflow: scroll;
+    scrollbar-width: none;
+    box-sizing: border-box;
+}
+
+.person1{
+    background-image: url("images/man1.png");
+}
+
+.person{
+    /* background-image: url("images/man1.png"); */
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.boxsection1{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.678);
+    font-size: small;
+    gap: 15px;
+}
+
+#post{
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.397);
+    color: rgba(255, 255, 255, 0.678);
+    width: 65px;
+    height: 35px;
+    border-radius: 50px;
+    margin-left: auto;
+    text-align: center;
+    font-size: smaller;
+}
+
+#post:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.boxsection2{
+    width: 100%;
+}
+
+.boxsection2 input{
+    background-color: rgba(0, 0, 0, 0.555);
+    border-style: none;
+    outline: none;
+    border-radius: 5px;
+    height:5vh;
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.678);
+    box-sizing: border-box;
+}
+
+.boxsection3{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+    padding-bottom: 10px;
+}
+
+.boxsection3 #attachfile{
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.397);
+    color: rgba(255, 255, 255, 0.678);
+    width:100px;
+    height: 25px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.boxsection3 #attachfile:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.boxsection3 #anyonecanreply{
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.397);
+    color: rgba(255, 255, 255, 0.678);
+    width:150px;
+    height: 25px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.boxsection3 #anyonecanreply:hover{
+    color:gray;
+    cursor: pointer;
+}
+
+.boxsection4{
+    margin-top: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.247);
+    padding-left: 20px;
+    margin-left: 20px;
+    height: 46.5vh;
+    position: relative;
+}
+
+.boxsection4 #person2details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    gap: 10px;
+}
+
+.boxsection4 #person2details h6{
+    margin-left: auto;
+}
+
+.person2{
+    position: absolute;
+    background-image: url("images/man2.jpg");
+    left:0;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.person2data{
+    color: rgba(228, 240, 241, 0.589);
+    font-size: 10px;
+    font-weight: 50;
+}
+
+.person2data>div:nth-child(2){
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 25vh;
+    background-image: url("images/nukefather.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.person2data>div:nth-child(3){
+    font-size: medium;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.person2data>div:nth-child(3)>i:hover{
+    cursor: pointer;
+}
+
+.person2data>div:nth-child(4){
+    position: absolute;
+    left:0;
+    bottom: 0;
+    background-image: url("images/man3.jpg");
+    transform: translate(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+
+.person2data>div:nth-child(5){
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.boxsection5 #person3details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    gap: 10px;
+}
+
+.boxsection5{
+    margin-top: 15px; 
+     border-left: 1px solid rgba(255, 255, 255, 0.247);
+    padding-left: 20px;
+    margin-left: 20px;
+    height: 38vh;
+    position: relative;
+}
+
+.person3{
+    position: absolute;
+    background-image: url("images/man4.jpg");
+    top: 0;
+    left: 0;
+    transform: translate(-50%);
+}
+
+#person3image{
+    background-image: url("images/house.jpg");
+
+}
+
+.boxsection5 #person3details>h6{
+    margin-left: auto;
+}
+
+.boxsection5 .person2data div:nth-child(3){
+    font-size: medium;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.boxsection5 .person2data div:nth-child(4){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url("images/man3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box2 {
+    width: 35%;
+
+    box-sizing: border-box;
+}
+
+.box2 .suggestions{
+    padding: 30px;
+}
+
+.box2 .suggestions .suggestionheading{
+    color: rgba(255, 255, 255, 0.712);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.box2 .suggestions .suggestionheading button{
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.397);
+    color: rgba(255, 255, 255, 0.678);
+    width:50px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.box2 .suggestions .suggestionheading button:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+.box2 .suggestions .box2suggestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.637);
+    font-size: 10px;
+    margin-top: 15px;
+
+}
+
+.box2 .suggestions .box2suggestion>p{
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.box2 .suggestions .box2suggestion> button{
+    border-style: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.678);
+    width:50px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.box2 .suggestions .box2suggestion:nth-child(2)> div{
+    background-image: url("images/man7.jpg");
+
+}
+.box2 .suggestions .box2suggestion:nth-child(3)> div{
+    background-image: url("images/man3.jpg");
+
+}
+.box2 .suggestions .box2suggestion:nth-child(4)> div{
+    background-image: url("images/man2.jpg");
+
+}
+.box2 .suggestions .box2suggestion:nth-child(5)> div{
+    background-image: url("images/man5.jpg");
+
+}
+.box2 .suggestions .box2suggestion:nth-child(6)> div{
+    background-image: url("images/man6.jpg");
+
+}
+.box2 .suggestions .box2suggestion:nth-child(7)> div{
+    background-image: url("images/man4.jpg");
+
+}
+
+.box2 .suggestions{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+
+}
+
+.trendingbox .trendingcontent{
+    color: rgba(255, 255, 255, 0.788);
+    font-size: 10px;
+}
+
+.trendingbox .trendingcontent .trendheading{
+    color: rgba(255, 255, 255, 0.712);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.trendingbox .trendingcontent .trendheading button{
+    border-style: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.678);
+    width:50px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10px;
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+.trendingbox .trendingcontent .trendheading button:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.trendingbox{
+    padding: 30px;
+    padding-top: 20px;
+}
+
+.trendingbox .trendingcontent .trendingperson{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.788);
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.trendingbox .trendingcontent .trendingperson> div{
+    background-image: url("images/man4.jpg");
+}
+
+.aiimage{
+    background-image: url("images/ai.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    border-radius: 5px;
+}
